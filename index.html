@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Workout Factory</title>
-    <meta name="description" content="Train Anywhere, Improve Everywhere!">
+    <title>Home Workout Club</title>
+    <meta name="description" content="Train Anywhere, Transform Everywhere!">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
-            --bg-color: #030712;
-            --bg-image: url('https://homeworkoutfactory.com/wp-content/uploads/2025/12/Black-and-White-Modern-and-Grungy-Presentation-Skills-Instagram-Reel-Cover-2-3.gif');
-            --bg-opacity: 0.7;
+            --bg-color: #ff0000;
+            --bg-image: url('https://raw.githubusercontent.com/pet6988888888/images/refs/heads/main/appbg3.jpg');
+            --bg-opacity: 0.03;
             --card-bg: #000000;
+            --card-bg-opacity: 0.56;
             --primary: #4f46e5;
             --secondary: #10b981;
             --text-color: #f3f4f6;
             --headline-color: #ffffff;
             --subtitle-color: #9ca3af;
-            --tab-color: #00cc63;
+            --tab-color: #10b981;
             --accent: #f59e0b;
+            --app-name-color: #ffffff;
+            --app-tagline-color: #ffffff;
         }
         body { 
             color: var(--text-color); 
@@ -52,6 +55,8 @@
         .bg-tab { background: var(--tab-color); }
         .border-tab { border-color: var(--tab-color); }
         .text-accent { color: var(--accent); }
+        .text-app-name { color: var(--app-name-color); }
+        .text-app-tagline { color: var(--app-tagline-color); }
         .big-timer { font-size: 4rem; line-height: 1; }
         .big-timer.seconds-only { font-size: 5rem; }
         .progress-circle { transition: stroke-dashoffset 0.3s ease; }
@@ -66,39 +71,39 @@
     <script>
         const WORKOUTS = [
   {
-    "id": "id-y95ty4kw5",
+    "id": "id-6pyavuzqe",
     "name": "HIWT Beginner",
-    "group": "Full Body Strength & Cardio",
-    "target": "Full Body Strength & Cardio Endurance",
+    "group": "HIWT",
+    "target": "Full Body High-Intensity Workout",
     "duration": "2 min",
     "icon": "Dumbbell",
     "exercises": [
       {
-        "name": "Knee Push-ups",
+        "name": "Push-Ups",
         "type": "exercise",
         "duration": 20,
-        "videoUrl": "",
+        "videoUrl": "https://homeworkoutfactory.com/wp-content/uploads/2025/11/Untitled-design.mp4",
         "imageUrl": ""
       },
       {
         "name": "Rest",
         "type": "rest",
         "duration": 10,
-        "videoUrl": "",
+        "videoUrl": "https://homeworkoutfactory.com/wp-content/uploads/2025/11/Untitled-design-6.mp4",
         "imageUrl": ""
       },
       {
         "name": "Squats",
         "type": "exercise",
         "duration": 20,
-        "videoUrl": "",
+        "videoUrl": "https://homeworkoutfactory.com/wp-content/uploads/2025/11/Untitled-design-5.mp4",
         "imageUrl": ""
       },
       {
         "name": "Rest",
         "type": "rest",
         "duration": 10,
-        "videoUrl": "",
+        "videoUrl": "https://homeworkoutfactory.com/wp-content/uploads/2025/11/Untitled-design-6.mp4",
         "imageUrl": ""
       },
       {
@@ -146,15 +151,15 @@
     ]
   },
   {
-    "id": "id-nm79i3zc0",
+    "id": "id-sblih89zx",
     "name": "HIWT Intermediate",
-    "group": "Full Body Strength & Cardio",
-    "target": "Full Body Strength & Cardio Endurance",
+    "group": "HIWT",
+    "target": "Full Body High-Intensity Workout",
     "duration": "2 min",
     "icon": "Dumbbell",
     "exercises": [
       {
-        "name": "Push-ups",
+        "name": "Push-Ups",
         "type": "exercise",
         "duration": 20,
         "videoUrl": "",
@@ -226,15 +231,15 @@
     ]
   },
   {
-    "id": "id-f9cd8qi6r",
+    "id": "id-wohh05wmd",
     "name": "HIWT Advanced",
-    "group": "Full Body Strength & Cardio",
-    "target": "Full Body Strength & Cardio Endurance",
+    "group": "HIWT",
+    "target": "Full Body High-Intensity Workout",
     "duration": "2 min",
     "icon": "Dumbbell",
     "exercises": [
       {
-        "name": "Decline Push-ups",
+        "name": "Decline Push-Ups",
         "type": "exercise",
         "duration": 20,
         "videoUrl": "",
@@ -306,674 +311,10 @@
     ]
   },
   {
-    "id": "id-saaqjucda",
-    "name": "Muscle Building Beginner",
-    "group": "Strength & Hypertrophy",
-    "target": "Full Body Strength & Muscle Growth",
-    "duration": "7 min",
-    "icon": "Dumbbell",
-    "exercises": [
-      {
-        "name": "Knee Push-up",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Bent Over Row",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Shoulder Press",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Squat",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Bridge",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      }
-    ]
-  },
-  {
-    "id": "id-l8mbykf99",
-    "name": "Muscle Building Intermediate",
-    "group": "Strength & Hypertrophy",
-    "target": "Full Body Strength & Muscle Growth",
-    "duration": "7 min",
-    "icon": "Dumbbell",
-    "exercises": [
-      {
-        "name": "Push-up",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Bent Over Row",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Pike Press",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "DB Bicep Curls",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Deep Squat",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      }
-    ]
-  },
-  {
-    "id": "id-txp8ektzc",
-    "name": "Muscle Building Advanced",
-    "group": "Strength & Hypertrophy",
-    "target": "Full Body Strength & Muscle Growth",
-    "duration": "10 min",
-    "icon": "Dumbbell",
-    "exercises": [
-      {
-        "name": "Decline Push-up",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Bent Over Row",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Elevated Pike Press",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Straight Leg Deadlift",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "DB Squat",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Archer Push-up",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Squat Curls",
-        "type": "exercise",
-        "duration": 60,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      }
-    ]
-  },
-  {
-    "id": "id-qp88dcbzb",
-    "name": "Core Workout Beginner",
-    "group": "Core Strength",
-    "target": "Beginner Core Stability",
-    "duration": "3 min",
-    "icon": "Dumbbell",
-    "exercises": [
-      {
-        "name": "Knee Plank",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Bridge Hold",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Knee Side Plank (Right)",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Knee Side Plank (Left)",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      }
-    ]
-  },
-  {
-    "id": "id-f62p1iqzp",
-    "name": "Core Workout Intermediate",
-    "group": "Core Strength",
-    "target": "Intermediate Core Stability",
-    "duration": "3 min",
-    "icon": "Dumbbell",
-    "exercises": [
-      {
-        "name": "Front Plank",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Side Plank (Left)",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Side Plank (Right)",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Back Extension",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      }
-    ]
-  },
-  {
-    "id": "id-nchbjn7f9",
-    "name": "Core Workout Advanced",
-    "group": "Core Strength",
-    "target": "Advanced Core Strength & Stability",
-    "duration": "3 min",
-    "icon": "Dumbbell",
-    "exercises": [
-      {
-        "name": "Plank Knee to Elbow",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Single Leg Reverse Plank",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Side Plank Hip Lifts (Right)",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Side Plank Hip Lifts (Left)",
-        "type": "exercise",
-        "duration": 30,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 15,
-        "videoUrl": "",
-        "imageUrl": ""
-      }
-    ]
-  },
-  {
-    "id": "id-vz5okvtql",
-    "name": "Abs Workout Beginner",
-    "group": "Abdominal Strength",
-    "target": "Beginner Abdominal Development",
-    "duration": "2 min",
-    "icon": "Dumbbell",
-    "exercises": [
-      {
-        "name": "Heel Touchers",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Crunches",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Reverse Crunch",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Plank",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      }
-    ]
-  },
-  {
-    "id": "id-ruxgb8axu",
-    "name": "Abs Workout Intermediate",
-    "group": "Abdominal Strength",
-    "target": "Intermediate Abdominal Development",
-    "duration": "2 min",
-    "icon": "Dumbbell",
-    "exercises": [
-      {
-        "name": "Crunch",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Reverse Crunch",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Bicycle Crunch",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Mountain Climbers",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      }
-    ]
-  },
-  {
-    "id": "id-zif27fdis",
-    "name": "Abs Workout Advanced",
-    "group": "Abdominal Strength",
-    "target": "Advanced Abdominal Development",
-    "duration": "2 min",
-    "icon": "Dumbbell",
-    "exercises": [
-      {
-        "name": "Medicine Ball Reverse Crunch",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Medicine Ball Drop Off",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Ball Slams",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Medicine Ball Russian Twists",
-        "type": "exercise",
-        "duration": 20,
-        "videoUrl": "",
-        "imageUrl": ""
-      },
-      {
-        "name": "Rest",
-        "type": "rest",
-        "duration": 10,
-        "videoUrl": "",
-        "imageUrl": ""
-      }
-    ]
-  },
-  {
-    "id": "id-mkgppl711",
+    "id": "id-xw6q032bq",
     "name": "HIIT Cardio Beginner",
-    "group": "Cardiovascular Endurance",
-    "target": "Beginner Cardiovascular Fitness",
+    "group": "HIIT",
+    "target": "Cardiovascular Endurance & Fat Loss",
     "duration": "2 min",
     "icon": "Dumbbell",
     "exercises": [
@@ -1050,10 +391,10 @@
     ]
   },
   {
-    "id": "id-btcib6x77",
+    "id": "id-6h74l20b6",
     "name": "HIIT Cardio Intermediate",
-    "group": "Cardiovascular Endurance",
-    "target": "Intermediate Cardiovascular Fitness",
+    "group": "HIIT",
+    "target": "Cardiovascular Endurance & Fat Loss",
     "duration": "2 min",
     "icon": "Dumbbell",
     "exercises": [
@@ -1130,10 +471,10 @@
     ]
   },
   {
-    "id": "id-ntcm6zgeq",
+    "id": "id-eowy9ckql",
     "name": "HIIT Cardio Advanced",
-    "group": "Cardiovascular Endurance",
-    "target": "Advanced Cardiovascular Fitness",
+    "group": "HIIT",
+    "target": "Cardiovascular Endurance & Fat Loss",
     "duration": "2 min",
     "icon": "Dumbbell",
     "exercises": [
@@ -1194,7 +535,7 @@
         "imageUrl": ""
       },
       {
-        "name": "Thrusters",
+        "name": "Thrusts",
         "type": "exercise",
         "duration": 20,
         "videoUrl": "",
@@ -1208,12 +549,1007 @@
         "imageUrl": ""
       }
     ]
+  },
+  {
+    "id": "id-9fdqr1ndd",
+    "name": "Core Workout Beginner",
+    "group": "CORE",
+    "target": "Core Stability & Strength",
+    "duration": "3 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Knee Plank",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Bridge Hold",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Knee Side Plank (R)",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Knee Side Plank (L)",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-3qg8fh6g2",
+    "name": "Core Workout Intermediate",
+    "group": "CORE",
+    "target": "Core Stability & Strength",
+    "duration": "3 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Front Plank",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Side Plank (Left)",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Side Plank (Right)",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Back Extension",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-35b9797u6",
+    "name": "Core Workout Advanced",
+    "group": "CORE",
+    "target": "Core Stability & Strength",
+    "duration": "3 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Plank Knee to Elbow",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Single Leg Reverse Plank",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Side Plank Hip Lifts (R)",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Side Plank Hip Lifts (L)",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-z0ynefy6e",
+    "name": "Abs Workout Beginner",
+    "group": "ABS",
+    "target": "Abdominal Strength & Definition",
+    "duration": "2 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Heel Touchers",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Crunches",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Reverse Crunch",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Plank",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-dmcn8qcu6",
+    "name": "Abs Workout Intermediate",
+    "group": "ABS",
+    "target": "Abdominal Strength & Definition",
+    "duration": "2 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Crunch",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Reverse Crunch",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Bicycle Crunch",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Mountain Climbers",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-0693d1ru7",
+    "name": "Abs Workout Advanced",
+    "group": "ABS",
+    "target": "Abdominal Strength & Definition",
+    "duration": "2 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "MB Reverse Crunch",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "MB Drop Off",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Ball Slams",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "MB Russian Twists",
+        "type": "exercise",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-j9zoyeykn",
+    "name": "Muscle Building Beginner",
+    "group": "MUSCLE",
+    "target": "Muscle Growth & Strength",
+    "duration": "7 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Knee Push-Up",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Bent Over Row",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Shoulder Press",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Squat",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Bridge",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-00u5t8lr3",
+    "name": "Muscle Building Intermediate",
+    "group": "MUSCLE",
+    "target": "Muscle Growth & Strength",
+    "duration": "7 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Push-Up",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Bent Over Row",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Pike Press",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "DB Bicep Curls",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Deep Squat",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-krfn66zzs",
+    "name": "Muscle Building Advanced",
+    "group": "MUSCLE",
+    "target": "Muscle Growth & Strength",
+    "duration": "10 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Decline Push-Up",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Bent Over Row",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Elevated Pike Press",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Straight Leg Deadlift",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "DB Squat",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Archer Push-Up",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Squat Curls",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-ttfx3ixa1",
+    "name": "Morning Flow Yoga",
+    "group": "Yoga",
+    "target": "Flexibility, gentle wake-up, mindfulness",
+    "duration": "7 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Cat-Cow Stretch",
+        "type": "exercise",
+        "duration": 45,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Sun Salutation A (modified)",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Downward-Facing Dog",
+        "type": "exercise",
+        "duration": 40,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Warrior I",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Warrior II",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Triangle Pose",
+        "type": "exercise",
+        "duration": 35,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Child's Pose",
+        "type": "exercise",
+        "duration": 45,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Savasana (Corpse Pose)",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-o1ekn0kox",
+    "name": "Evening Unwind Yoga",
+    "group": "Yoga",
+    "target": "Relaxation, stress relief, gentle stretching",
+    "duration": "7 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Supine Spinal Twist",
+        "type": "exercise",
+        "duration": 50,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Reclined Bound Angle Pose",
+        "type": "exercise",
+        "duration": 55,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Legs-Up-The-Wall Pose",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Pigeon Pose",
+        "type": "exercise",
+        "duration": 45,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Seated Forward Fold",
+        "type": "exercise",
+        "duration": 40,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Child's Pose",
+        "type": "exercise",
+        "duration": 50,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Savasana (Corpse Pose)",
+        "type": "exercise",
+        "duration": 60,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "id-6ui851b3s",
+    "name": "Strength & Balance Yoga",
+    "group": "Yoga",
+    "target": "Core strength, balance, muscle endurance",
+    "duration": "6 min",
+    "icon": "Dumbbell",
+    "exercises": [
+      {
+        "name": "Plank Pose",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Chair Pose",
+        "type": "exercise",
+        "duration": 40,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Warrior III",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Tree Pose",
+        "type": "exercise",
+        "duration": 45,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Crow Pose Prep (or Crow Pose)",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 20,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Boat Pose",
+        "type": "exercise",
+        "duration": 35,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 15,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Side Plank",
+        "type": "exercise",
+        "duration": 30,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Rest",
+        "type": "rest",
+        "duration": 10,
+        "videoUrl": "",
+        "imageUrl": ""
+      },
+      {
+        "name": "Dolphin Pose",
+        "type": "exercise",
+        "duration": 40,
+        "videoUrl": "",
+        "imageUrl": ""
+      }
+    ]
   }
 ];
-        const APP_NAME = "Home Workout Factory";
-        const APP_DESC = "Train Anywhere, Improve Everywhere!";
+        const APP_NAME = "Home Workout Club";
+        const APP_DESC = "Train Anywhere, Transform Everywhere!";
         const APP_LOGO = "https://raw.githubusercontent.com/pet6988888888/images/refs/heads/main/home_workout__2_-removebg-preview.png";
-        const COLORS = {"background":"#030712","backgroundImage":"https://homeworkoutfactory.com/wp-content/uploads/2025/12/Black-and-White-Modern-and-Grungy-Presentation-Skills-Instagram-Reel-Cover-2-3.gif","backgroundOpacity":0.7,"cardBackground":"#000000","cardOpacity":0.51,"primaryColor":"#4f46e5","secondaryColor":"#10b981","textColor":"#f3f4f6","headlineColor":"#ffffff","subtitleColor":"#9ca3af","tabColor":"#00cc63","accentColor":"#f59e0b","appNameColor":"#ffffff","appTaglineColor":"#9ca3af"};
+        const COLORS = {"background":"#ff0000","backgroundImage":"https://raw.githubusercontent.com/pet6988888888/images/refs/heads/main/appbg3.jpg","backgroundOpacity":0.03,"cardBackground":"#000000","cardBackgroundOpacity":0.56,"primaryColor":"#4f46e5","secondaryColor":"#10b981","textColor":"#f3f4f6","headlineColor":"#ffffff","subtitleColor":"#9ca3af","tabColor":"#10b981","accentColor":"#f59e0b","appNameColor":"#ffffff","appTaglineColor":"#ffffff"};
         
         let currentView = 'groupList';
         let selectedGroupName = null;
@@ -1244,6 +1580,13 @@
             const mins = Math.floor(seconds / 60);
             const secs = seconds % 60;
             return mins + ':' + secs.toString().padStart(2, '0');
+        };
+
+        const hexToRgba = (hex, alpha) => {
+            const r = parseInt(hex.slice(1, 3), 16);
+            const g = parseInt(hex.slice(3, 5), 16);
+            const b = parseInt(hex.slice(5, 7), 16);
+            return 'rgba(' + r + ', ' + g + ', ' + b + ', ' + alpha + ')';
         };
 
         const playTone = (frequency = 440, duration = 0.1) => {
@@ -1313,12 +1656,18 @@
                 count: WORKOUTS.filter(w => w.group.split(' > ')[0] === g).length
             }));
 
+            const bgStyle = COLORS.backgroundImage 
+                ? 'background: url(\'' + COLORS.backgroundImage + '\') center/cover no-repeat, ' + COLORS.background
+                : 'background: ' + COLORS.background;
+
+            const cardBgWithOpacity = hexToRgba(COLORS.cardBackground, COLORS.cardBackgroundOpacity);
+
             container.innerHTML = `
-                <div class="min-h-screen p-4" style="color: ${COLORS.textColor};">
+                <div class="min-h-screen p-4" style="${bgStyle}; color: ${COLORS.textColor};">
                     <header class="py-6 mb-6 text-center">
                         ${APP_LOGO ? '<img src="' + APP_LOGO + '" alt="Logo" class="h-16 mx-auto mb-4 object-contain" onerror="this.style.display=\'none\'" />' : ''}
-                        <h1 class="text-3xl font-extrabold" style="color: ${COLORS.headlineColor}">${APP_NAME}</h1>
-                        <p class="mt-1" style="color: ${COLORS.subtitleColor}">${APP_DESC}</p>
+                        <h1 class="text-3xl font-extrabold" style="color: ${COLORS.appNameColor}">${APP_NAME}</h1>
+                        <p class="mt-1" style="color: ${COLORS.appTaglineColor}">${APP_DESC}</p>
                     </header>
                     <div class="space-y-4" id="group-list-container"></div>
                 </div>
@@ -1328,7 +1677,7 @@
             groups.forEach(group => {
                 const button = document.createElement('button');
                 button.className = "w-full text-left p-6 rounded-2xl shadow-lg transition-all duration-300";
-                button.style.background = COLORS.cardBackground;
+                button.style.background = cardBgWithOpacity;
                 button.style.borderBottom = '4px solid ' + COLORS.tabColor;
                 button.innerHTML = `
                     <div class="flex items-center justify-between">
@@ -1351,9 +1700,14 @@
 
         const renderGroupWorkouts = (container) => {
             const filteredWorkouts = WORKOUTS.filter(w => w.group.split(' > ')[0] === selectedGroupName);
+            const bgStyle = COLORS.backgroundImage 
+                ? 'background: url(\'' + COLORS.backgroundImage + '\') center/cover no-repeat, ' + COLORS.background
+                : 'background: ' + COLORS.background;
             
+            const cardBgWithOpacity = hexToRgba(COLORS.cardBackground, COLORS.cardBackgroundOpacity);
+
             container.innerHTML = `
-                <div class="min-h-screen p-4" style="color: ${COLORS.textColor};">
+                <div class="min-h-screen p-4" style="${bgStyle}; color: ${COLORS.textColor};">
                     <header class="py-6 mb-6">
                         <button id="back-to-groups" class="flex items-center font-medium mb-6" style="color: ${COLORS.tabColor}">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg> All Groups
@@ -1371,7 +1725,7 @@
             filteredWorkouts.forEach(workout => {
                 const button = document.createElement('button');
                 button.className = "w-full text-left p-5 rounded-2xl shadow-lg transition-all duration-300";
-                button.style.background = COLORS.cardBackground;
+                button.style.background = cardBgWithOpacity;
                 button.style.borderBottom = '4px solid ' + COLORS.primaryColor;
                 button.innerHTML = `
                     <div class="flex items-start">
@@ -1397,6 +1751,8 @@
             const workout = WORKOUTS.find(w => w.id === selectedWorkoutId);
             if (!workout) return navigateTo('groupList');
 
+            const cardBgWithOpacity = hexToRgba(COLORS.cardBackground, COLORS.cardBackgroundOpacity);
+
             const oneRoundTime = workout.exercises.reduce((sum, step) => sum + step.duration, 0);
             const getEstimatedTime = (rounds) => {
                 const totalExerciseTime = oneRoundTime * rounds;
@@ -1410,7 +1766,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg> Back to Workouts
                     </button>
 
-                    <div class="p-6 rounded-2xl shadow-xl mb-6" style="background: ${COLORS.cardBackground}; border-top: 4px solid ${COLORS.primaryColor};">
+                    <div class="p-6 rounded-2xl shadow-xl mb-6" style="background: ${cardBgWithOpacity}; border-top: 4px solid ${COLORS.primaryColor};">
                         <div class="flex items-center justify-between mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" style="color: ${COLORS.primaryColor}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z"/><path d="m2.5 21.5 1.4-1.4"/><path d="m20.1 3.9 1.4-1.4"/><path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z"/><path d="m9.6 14.4 4.8-4.8"/></svg>
                             <p class="text-sm font-semibold opacity-60 flex items-center">
@@ -1422,7 +1778,7 @@
                         
                         <div class="mt-4 pt-4 border-t border-gray-700 flex flex-col sm:flex-row sm:items-center sm:justify-between">
                             <label for="rounds-selector" class="text-sm font-semibold opacity-60 mb-2 sm:mb-0">Select Rounds:</label>
-                            <select id="rounds-selector" class="p-2 rounded-lg focus:outline-none cursor-pointer" style="background: ${COLORS.cardBackground}; border: 1px solid ${COLORS.primaryColor};">
+                            <select id="rounds-selector" class="p-2 rounded-lg focus:outline-none cursor-pointer" style="background: ${cardBgWithOpacity}; border: 1px solid ${COLORS.primaryColor};">
                                 <option value="1">1 Round (${getEstimatedTime(1)})</option>
                                 <option value="2">2 Rounds (${getEstimatedTime(2)})</option>
                                 <option value="3">3 Rounds (${getEstimatedTime(3)})</option>
@@ -1478,6 +1834,8 @@
             const workout = WORKOUTS.find(w => w.id === selectedWorkoutId);
             if (!workout || currentWorkoutSteps.length === 0) return navigateTo('groupList');
 
+            const cardBgWithOpacity = hexToRgba(COLORS.cardBackground, COLORS.cardBackgroundOpacity);
+
             if (preWorkoutCountdown > 0) {
                 container.innerHTML = `
                     <div class="min-h-screen flex flex-col items-center justify-center p-4 text-center" style="background: ${COLORS.background}; color: ${COLORS.textColor};">
@@ -1511,156 +1869,240 @@
                 return;
             }
 
-            const currentStep = currentWorkoutSteps[currentStepIndex];
-            const isLastStep = currentStepIndex === currentWorkoutSteps.length - 1;
-            const nextStep = !isLastStep ? currentWorkoutSteps[currentStepIndex + 1] : null;
+            const renderPlayerUI = () => {
+                const currentStep = currentWorkoutSteps[currentStepIndex];
+                const isLastStep = currentStepIndex === currentWorkoutSteps.length - 1;
+                const nextStep = !isLastStep ? currentWorkoutSteps[currentStepIndex + 1] : null;
+                const totalSteps = currentWorkoutSteps.length;
 
-            let typeColor = COLORS.cardBackground;
-            if (currentStep.type === 'exercise') typeColor = COLORS.secondaryColor;
-            else if (currentStep.type === 'rest') typeColor = COLORS.accentColor;
-            else if (currentStep.type === 'transition') typeColor = COLORS.primaryColor;
+                let typeColor = COLORS.cardBackground;
+                if (currentStep.type === 'exercise') typeColor = COLORS.secondaryColor;
+                else if (currentStep.type === 'rest') typeColor = COLORS.accentColor;
+                else if (currentStep.type === 'transition') typeColor = COLORS.primaryColor;
 
-            const timerProgress = initialTime > 0 ? (timeLeft / initialTime) * 100 : 0;
-            const circumference = 2 * Math.PI * 45;
-            const dashoffset = circumference * (1 - timerProgress / 100);
+                const timerProgress = initialTime > 0 ? (timeLeft / initialTime) * 100 : 0;
+                const circumference = 2 * Math.PI * 45;
+                const dashoffset = circumference * (1 - timerProgress / 100);
 
-            container.innerHTML = `
-                <div class="min-h-screen flex flex-col p-4" style="background: ${COLORS.background}; color: ${COLORS.textColor};">
-                    <div class="flex items-center justify-between mb-6">
-                        <button id="player-back-btn" class="flex items-center font-medium" style="color: ${COLORS.primaryColor}">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg> Back
-                        </button>
-                        <h1 class="text-xl font-bold truncate">${workout.name}</h1>
-                        <div class="text-right">
-                            <p class="text-xs opacity-60">Total Left</p>
-                            <p id="total-time-display" class="text-lg font-bold">${formatTime(totalTimeLeft)}</p>
-                        </div>
+                const nextUpHtml = nextStep ? `
+                    <div class="mt-4 p-3 rounded-xl shadow-inner text-center" style="background: ${cardBgWithOpacity}; border: 1px solid ${COLORS.cardBackground};">
+                        <p class="text-xs font-semibold uppercase tracking-wider" style="color: ${COLORS.primaryColor}">Up Next</p>
+                        <p class="text-xl font-bold mt-1">${nextStep.name} (${nextStep.duration}s)</p>
                     </div>
+                ` : '';
+                
+                const currentRoundDisplay = currentStep.round ? 
+                    (currentStep.type === 'transition' ? 'Break After Round ' + currentStep.round : 'Round ' + currentStep.round + ' of ' + selectedRounds)
+                    : 'Warmup';
 
-                    <div class="flex-1 flex flex-col items-center justify-center">
-                        <div class="relative w-48 h-48 mb-8">
-                            <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="${COLORS.cardBackground}" stroke-width="8"/>
-                                <circle id="timer-progress-circle" class="progress-circle" cx="50" cy="50" r="45" fill="none" stroke="${typeColor}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${circumference}" stroke-dashoffset="${dashoffset}"/>
-                            </svg>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <span id="timer-display" class="big-timer font-black ${timeLeft < 60 ? 'seconds-only' : ''}">${formatBigTimer(timeLeft)}</span>
+                const DEMO_VIDEO_URL = 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4';
+                const videoSourceUrl = currentStep.videoUrl || currentStep.imageUrl || DEMO_VIDEO_URL;
+                const isImage = currentStep.imageUrl && !currentStep.videoUrl;
+                const mediaHtml = isImage 
+                    ? '<img src="' + videoSourceUrl + '" alt="' + currentStep.name + '" class="absolute inset-0 w-full h-full object-cover" />'
+                    : '<video id="demo-video" class="absolute inset-0 w-full h-full object-cover" src="' + videoSourceUrl + '" autoplay loop muted playsinline></video>';
+
+                const playerHtml = `
+                    <div class="min-h-screen flex flex-col p-4" style="background: ${COLORS.background}; color: ${COLORS.textColor};">
+                        <div class="flex items-center justify-between mb-6">
+                            <button id="player-back-btn" class="flex items-center font-medium" style="color: ${COLORS.primaryColor}">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg> Back
+                            </button>
+                            <h1 class="text-xl font-bold truncate">${workout.name} (${selectedRounds} Rds)</h1>
+                            <div class="text-right">
+                                <p class="text-xs opacity-60 uppercase tracking-wider">Total Time Left</p>
+                                <p id="total-time-display" class="text-lg font-bold">${formatTime(totalTimeLeft)}</p>
                             </div>
                         </div>
 
-                        <p class="text-sm font-semibold uppercase tracking-wider mb-2" style="color: ${typeColor}">${currentStep.type}</p>
-                        <h2 class="text-4xl font-extrabold text-center mb-4">${currentStep.name}</h2>
-
-                        ${nextStep ? `
-                            <div class="mt-4 p-3 rounded-xl text-center" style="background: ${COLORS.cardBackground};">
-                                <p class="text-xs font-semibold uppercase" style="color: ${COLORS.primaryColor}">Up Next</p>
-                                <p class="text-xl font-bold mt-1">${nextStep.name} (${nextStep.duration}s)</p>
+                        <div class="flex-1 flex flex-col lg:grid lg:grid-cols-2 lg:gap-8">
+                            <div class="flex flex-col">
+                                <div class="w-full aspect-video rounded-xl shadow-lg relative overflow-hidden" style="background: ${cardBgWithOpacity};">
+                                    ${mediaHtml}
+                                </div>
+                                <div id="current-step-card" class="mt-6 lg:mt-4 p-4 rounded-xl shadow-lg text-white text-center transition-colors duration-300" style="background: ${typeColor};">
+                                    <div class="text-sm font-light uppercase tracking-widest opacity-80">${currentStep.type === 'exercise' ? 'CURRENT EXERCISE' : 'BREAK TIME'}</div>
+                                    <h2 class="text-4xl font-extrabold mt-1 mb-2">${currentStep.name}</h2>
+                                    <p class="text-xs font-semibold opacity-70">${currentRoundDisplay}</p>
+                                </div>
+                                ${nextUpHtml}
                             </div>
-                        ` : ''}
+                            
+                            <div class="flex flex-col justify-between pt-6 lg:pt-0">
+                                <div class="lg:order-1">
+                                    <div class="text-sm opacity-60 flex justify-between">
+                                        <span id="step-count">Step ${currentStepIndex + 1} of ${totalSteps}</span>
+                                        <span id="step-type" class="font-medium uppercase">${currentStep.type}</span>
+                                    </div>
+                                    <div class="w-full h-2 rounded-full mt-1" style="background: ${cardBgWithOpacity};">
+                                        <div id="overall-progress" class="h-2 rounded-full transition-all duration-700" style="width: ${((currentStepIndex + 1) / totalSteps) * 100}%; background: ${typeColor};"></div>
+                                    </div>
+                                </div>
+
+                                <div class="relative flex justify-center my-10 lg:my-0 lg:flex-1 lg:items-center lg:justify-center lg:py-8">
+                                    <div class="w-56 h-56 rounded-full flex items-center justify-center relative shadow-2xl">
+                                        <div class="absolute inset-0 rounded-full" style="background: ${cardBgWithOpacity};"></div>
+                                        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
+                                            <circle cx="50" cy="50" r="45" fill="none" stroke-width="5" stroke-dasharray="${circumference}" stroke-dashoffset="${dashoffset}" id="timer-progress-circle" class="progress-circle" style="stroke: ${typeColor};" transform="rotate(-90 50 50)"/>
+                                        </svg>
+                                        <p id="timer-display" class="relative big-timer font-black ${timeLeft < 60 ? 'seconds-only' : ''}">${formatBigTimer(timeLeft)}</p>
+                                    </div>
+                                </div>
+
+                                <div class="lg:order-3 mt-auto">
+                                    <div class="flex justify-around items-center p-4 rounded-xl" style="background: ${cardBgWithOpacity};">
+                                        <button id="play-pause-btn" class="p-4 rounded-full shadow-lg transition-all duration-300" style="background: ${isRunning ? COLORS.accentColor : COLORS.secondaryColor};">
+                                            ${isRunning ? '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>' : '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>'}
+                                        </button>
+                                        <button id="skip-btn" class="p-4 rounded-full shadow-lg ml-4 transition-colors" style="background: ${cardBgWithOpacity};">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" x2="19" y1="5" y2="19"/></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                `;
+                container.innerHTML = playerHtml;
 
-                    <div class="flex gap-4 mt-8">
-                        <button id="play-pause-btn" class="flex-1 p-4 rounded-xl font-bold flex items-center justify-center gap-2" style="background: ${COLORS.primaryColor}; color: white;">
-                            ${isRunning ? '<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg> Pause' : '<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg> Play'}
-                        </button>
-                        <button id="skip-btn" class="p-4 rounded-xl font-bold flex items-center justify-center gap-2" style="background: ${COLORS.cardBackground}; border: 2px solid ${COLORS.primaryColor}; color: ${COLORS.primaryColor};">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg> Skip
-                        </button>
-                    </div>
-                </div>
-            `;
+                document.getElementById('player-back-btn').addEventListener('click', () => navigateTo('detail', { workoutId: selectedWorkoutId }));
+                document.getElementById('play-pause-btn').addEventListener('click', () => { isRunning = !isRunning; renderPlayerUI(); });
+                document.getElementById('skip-btn').addEventListener('click', handleSkip);
 
-            document.getElementById('player-back-btn').addEventListener('click', () => navigateTo('detail', { workoutId: selectedWorkoutId }));
-            document.getElementById('play-pause-btn').addEventListener('click', () => {
-                isRunning = !isRunning;
-                renderApp();
-            });
-            document.getElementById('skip-btn').addEventListener('click', handleSkip);
+                if (isRunning && !timerInterval) {
+                    timerInterval = setInterval(updateTimer, 1000);
+                }
+            };
 
-            if (isRunning && !timerInterval) {
-                timerInterval = setInterval(updateTimer, 1000);
-            }
-        };
+            const updateTimer = () => {
+                if (!isRunning) return;
+                totalTimeLeft--;
+                const totalTimeDisplay = document.getElementById('total-time-display');
+                if (totalTimeDisplay) totalTimeDisplay.textContent = formatTime(totalTimeLeft);
+                timeLeft--;
+                const isLastStep = currentStepIndex === currentWorkoutSteps.length - 1;
+                
+                if (timeLeft >= 1 && timeLeft <= 3) playTone(440);
 
-        const updateTimer = () => {
-            if (!isRunning) return;
-            totalTimeLeft--;
-            const totalTimeDisplay = document.getElementById('total-time-display');
-            if (totalTimeDisplay) totalTimeDisplay.textContent = formatTime(totalTimeLeft);
-            timeLeft--;
-            const isLastStep = currentStepIndex === currentWorkoutSteps.length - 1;
-            
-            if (timeLeft >= 1 && timeLeft <= 3) playTone(440);
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    timerInterval = null;
+                    if (!isLastStep) {
+                        playTone(880, 0.2);
+                        currentStepIndex++;
+                        const nextStep = currentWorkoutSteps[currentStepIndex];
+                        timeLeft = nextStep.duration;
+                        initialTime = nextStep.duration;
+                        renderPlayerUI();
+                    } else {
+                        playTone(880, 0.3);
+                        setTimeout(() => {
+                            playTone(880, 0.3);
+                            setTimeout(() => playTone(880, 0.3), 200);
+                        }, 200);
+                        isRunning = false;
+                        setTimeout(() => navigateTo('complete', { workoutId: selectedWorkoutId }), 500);
+                    }
+                } else {
+                    const timerDisplay = document.getElementById('timer-display');
+                    if (timerDisplay) {
+                        timerDisplay.textContent = formatBigTimer(timeLeft);
+                        timerDisplay.className = 'relative big-timer font-black ' + (timeLeft < 60 ? 'seconds-only' : '');
+                    }
+                    const progressCircle = document.getElementById('timer-progress-circle');
+                    if (progressCircle) {
+                        const circumference = 2 * Math.PI * 45;
+                        const progress = initialTime > 0 ? (timeLeft / initialTime) * 100 : 0;
+                        progressCircle.setAttribute('stroke-dashoffset', circumference * (1 - progress / 100));
+                    }
+                }
+            };
 
-            if (timeLeft <= 0) {
+            const handleSkip = () => {
                 clearInterval(timerInterval);
                 timerInterval = null;
+                const isLastStep = currentStepIndex === currentWorkoutSteps.length - 1;
                 if (!isLastStep) {
-                    playTone(880, 0.2);
+                    totalTimeLeft -= timeLeft;
                     currentStepIndex++;
                     const nextStep = currentWorkoutSteps[currentStepIndex];
                     timeLeft = nextStep.duration;
                     initialTime = nextStep.duration;
-                    renderApp();
+                    renderPlayerUI();
                 } else {
-                    playTone(880, 0.3);
-                    isRunning = false;
-                    setTimeout(() => navigateTo('complete', { workoutId: selectedWorkoutId }), 500);
+                    navigateTo('complete', { workoutId: selectedWorkoutId });
                 }
-            } else {
-                const timerDisplay = document.getElementById('timer-display');
-                if (timerDisplay) {
-                    timerDisplay.textContent = formatBigTimer(timeLeft);
-                    timerDisplay.className = 'big-timer font-black ' + (timeLeft < 60 ? 'seconds-only' : '');
-                }
-                const progressCircle = document.getElementById('timer-progress-circle');
-                if (progressCircle) {
-                    const circumference = 2 * Math.PI * 45;
-                    const progress = initialTime > 0 ? (timeLeft / initialTime) * 100 : 0;
-                    progressCircle.setAttribute('stroke-dashoffset', circumference * (1 - progress / 100));
-                }
-            }
-        };
+            };
 
-        const handleSkip = () => {
-            clearInterval(timerInterval);
-            timerInterval = null;
-            const isLastStep = currentStepIndex === currentWorkoutSteps.length - 1;
-            if (!isLastStep) {
-                totalTimeLeft -= timeLeft;
-                currentStepIndex++;
-                const nextStep = currentWorkoutSteps[currentStepIndex];
-                timeLeft = nextStep.duration;
-                initialTime = nextStep.duration;
-                renderApp();
-            } else {
-                navigateTo('complete', { workoutId: selectedWorkoutId });
-            }
+            renderPlayerUI();
         };
 
         const renderCompletionScreen = (container) => {
             const workout = WORKOUTS.find(w => w.id === selectedWorkoutId);
             if (!workout) return navigateTo('groupList');
 
+            const cardBgWithOpacity = hexToRgba(COLORS.cardBackground, COLORS.cardBackgroundOpacity);
+
             const POSITIVE_MESSAGES = [
-                "WELL DONE!", "YOU CRUSHED IT!", "FANTASTIC EFFORT!",
-                "GREAT JOB!", "AMAZING WORK!", "YOU DID IT!"
+                "WELL DONE ON COMPLETING THE WORKOUT!",
+                "YOU CRUSHED IT! WHAT A PERFORMANCE!",
+                "FANTASTIC EFFORT! THAT'S ANOTHER ONE DONE.",
+                "MUSCLES MADE, STRESS RELIEVED. GREAT JOB!",
+                "CONSISTENCY IS KEY. KEEP UP THE AMAZING WORK!",
+                "YOU DID IT! FEEL THAT ENDORPHIN RUSH!",
+                "POWERFUL PERFORMANCE. YOU ARE UNSTOPPABLE!",
+                "EVERY REP COUNTS. WONDERFUL JOB FINISHING!",
+                "YOU EARNED THAT! CELEBRATE YOUR STRENGTH.",
+                "GOALS ACHIEVED! BE PROUD OF YOUR EFFORT."
             ];
             const randomMessage = POSITIVE_MESSAGES[Math.floor(Math.random() * POSITIVE_MESSAGES.length)];
 
-            container.innerHTML = `
+            const finalTimeDisplay = formatTime(initialTotalDuration);
+            const activeTimeDisplay = formatTime(totalExerciseTime);
+            const restTimeDisplay = formatTime(totalRestTime);
+
+            const html = `
                 <div class="min-h-screen flex flex-col items-center justify-center p-6 text-center" style="background: ${COLORS.background}; color: ${COLORS.textColor};">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" style="color: ${COLORS.secondaryColor}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                    <h1 class="text-3xl font-extrabold mb-4" style="color: ${COLORS.secondaryColor}">${randomMessage}</h1>
-                    <p class="text-xl font-semibold mb-8">${workout.name}</p>
-                    <button id="go-home-btn" class="text-white p-4 rounded-xl text-lg font-bold" style="background: ${COLORS.primaryColor};">
-                        Go to Workouts
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" style="color: ${COLORS.secondaryColor}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    
+                    <h1 class="text-3xl md:text-4xl font-extrabold mb-8 uppercase" style="color: ${COLORS.secondaryColor}">
+                        ${randomMessage}
+                    </h1>
+
+                    <p class="text-xl font-semibold mb-2">${workout.name}</p>
+                    
+                    <div class="p-6 rounded-xl w-full max-w-sm shadow-xl mt-4 mb-10" style="background: ${cardBgWithOpacity}; border: 1px solid ${COLORS.primaryColor}30;">
+                        <h2 class="text-lg font-bold border-b pb-2 mb-4 text-left" style="border-color: ${COLORS.primaryColor}30; color: ${COLORS.primaryColor}">Your Session Summary:</h2>
+                        <div class="space-y-3 text-left">
+                            <div class="flex justify-between items-center text-lg">
+                                <span class="font-medium">Total Duration:</span>
+                                <span class="font-bold" style="color: ${COLORS.secondaryColor}">${finalTimeDisplay}</span>
+                            </div>
+                            <div class="flex justify-between items-center opacity-70">
+                                <span>Time Exercising:</span>
+                                <span class="font-bold">${activeTimeDisplay}</span>
+                            </div>
+                            <div class="flex justify-between items-center opacity-70">
+                                <span>Time Resting:</span>
+                                <span class="font-bold">${restTimeDisplay}</span>
+                            </div>
+                            <div class="flex justify-between items-center border-t pt-3 mt-3" style="border-color: ${COLORS.primaryColor}30;">
+                                <span class="font-medium">Rounds Completed:</span>
+                                <span class="text-xl font-extrabold" style="color: ${COLORS.secondaryColor}">${selectedRounds}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="go-home-btn" class="text-white p-4 rounded-xl text-lg font-bold shadow-lg flex items-center" style="background: ${COLORS.primaryColor};">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Go to Workouts
                     </button>
                 </div>
             `;
+            container.innerHTML = html;
             document.getElementById('go-home-btn').addEventListener('click', () => navigateTo('groupList'));
         };
 
+        // Initialize
         renderApp();
     </script>
 </body>
